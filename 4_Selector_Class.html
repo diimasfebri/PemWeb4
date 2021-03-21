@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- tag untuk memanggil jQuery -->
+	<script src="jquery-3.6.0.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		//script selector_id dan selector_class, subdaftar merupakan selector class
+		$(document).ready(function(){
+			$("#daftar").addClass("merahkuning");
+			$("#coba").addClass("kuninghitam");
+		});
+	</script>
+	<!--script css untuk mengubah warna-->
+	<style type="text/css">
+		.merahkuning{
+			color: red;
+			font-weight: bold;
+			background-color: yellow;
+			padding: 3px;
+		}
+		.kuninghitam{
+			color: white;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p>Paragraf Pertama</p>
+	</div>
+	<div>
+			<!--"daftar" sebagai selector id-->
+		<ul id="daftar">
+			<li>item 1</li>
+			<!--"subdaftar" sebagai selector class-->
+			<li id="coba">item 2</li>
+			<li>item 3</li>
+		</ul>
+	</div>
+</body>
+</html>

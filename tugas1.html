@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- tag untuk memanggil jQuery -->
+	<script src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		//script jQuery untuk tampil & semubunyikan gambar 
+		$(document).ready(function() {
+			$(".show1").click(function() {$("#photo1").show("slow") });
+			$(".hide1").click(function() {$("#photo1").hide("slow") });
+			$(".show2").click(function() {$("#photo2").show("slow") });
+			$(".hide2").click(function() {$("#photo2").hide("slow") });
+		});
+	</script>
+	<!--script css untuk mendesain laman web-->
+	<style type="text/css">
+		tr{
+			text-align: center;
+		}
+	</style>	
+</head>
+<body>
+    <!-- tag akan menampilkan berberapa button yang tertata rapi dengan table -->
+	<table>
+		<!--tag untuk memunculkan tombol-->
+		<tr>
+			<td><button class="show1">tampilkan foto 1</button></td>
+			<td><button class="show2">tampilkan foto 2</button></td>
+		</tr>
+		<!--tag untuk memunculkan gambar-->
+		<tr>
+			<td><button class="show1">sembunyikan foto 1</button></td>
+			<td><button class="show2">sembunyikan foto 2</button></td>
+		</tr>
+		<tr>
+			<td><p><img id="photo1" src="buntut.jpg" width="200px" height="200px" hidden=""></p></td>
+			<td><p><img id="photo2" src="kepala.jpg" width="200px" height="200px" hidden=""></p></td>
+		</tr>
+
+	</table>
+</body>
+</html>
